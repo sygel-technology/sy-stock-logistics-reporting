@@ -1,7 +1,7 @@
 # Copyright 2023 Alberto Martínez <alberto.martinez@sygel.es>
 # License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl).
 
-from odoo import fields, models
+from odoo import fields, models, api
 
 
 class StockPicking(models.Model):
@@ -12,9 +12,11 @@ class StockPicking(models.Model):
         help='Print an unvalued picking copy',
     )
 
-    def create(self, values):
-        values.update({
-            'unvalued_copy': self.env['res.partner'].browse(
-                values['partner_id']).unvalued_picking_copy
-        })
-        return super().create(values)
+    @api.model_create_multi
+    def create(self, vals_list):
+        for vals in vals_list:
+            vals.update({
+                'unvalued_copy': self.env['res.partner'].browse(
+                    vals['partner_id']).unvalued_picking_copy
+            })
+        return super().create(vals_list)
