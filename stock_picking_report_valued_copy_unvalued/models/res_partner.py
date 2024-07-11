@@ -5,11 +5,11 @@ from odoo import fields, models
 
 
 class ResPartner(models.Model):
-    _inherit = 'res.partner'
+    _inherit = "res.partner"
 
     unvalued_picking_copy = fields.Boolean(
-        string='Unvalued Picking Copy',
+        string="Unvalued Picking Copy",
         default=False,
-        help='Print an unvalued picking copy',
+        help="Print an unvalued picking copy",
         copy=False,
     )
