@@ -1,8 +1,8 @@
 
 <!-- /!\ Non OCA Context : Set here the badge of your runbot / runboat instance. -->
-[![Pre-commit Status](https://github.com/sygel-technology/sy-stock-logistics-reporting/actions/workflows/pre-commit.yml/badge.svg?branch=16.0)](https://github.com/sygel-technology/sy-stock-logistics-reporting/actions/workflows/pre-commit.yml?query=branch%3A16.0)
-[![Build Status](https://github.com/sygel-technology/sy-stock-logistics-reporting/actions/workflows/test.yml/badge.svg?branch=16.0)](https://github.com/sygel-technology/sy-stock-logistics-reporting/actions/workflows/test.yml?query=branch%3A16.0)
-[![codecov](https://codecov.io/gh/sygel-technology/sy-stock-logistics-reporting/branch/16.0/graph/badge.svg)](https://codecov.io/gh/sygel-technology/sy-stock-logistics-reporting)
+[![Pre-commit Status](https://github.com/sygel-technology/sy-stock-logistics-reporting/actions/workflows/pre-commit.yml/badge.svg?branch=15.0)](https://github.com/sygel-technology/sy-stock-logistics-reporting/actions/workflows/pre-commit.yml?query=branch%3A15.0)
+[![Build Status](https://github.com/sygel-technology/sy-stock-logistics-reporting/actions/workflows/test.yml/badge.svg?branch=15.0)](https://github.com/sygel-technology/sy-stock-logistics-reporting/actions/workflows/test.yml?query=branch%3A15.0)
+[![codecov](https://codecov.io/gh/sygel-technology/sy-stock-logistics-reporting/branch/15.0/graph/badge.svg)](https://codecov.io/gh/sygel-technology/sy-stock-logistics-reporting)
 <!-- /!\ Non OCA Context : Set here the badge of your translation instance. -->
 
 <!-- /!\ do not modify above this line -->
@@ -17,11 +17,7 @@ Stock logistics reporting
 
 [//]: # (addons)
 
-Available addons
-----------------
-addon | version | maintainers | summary
---- | --- | --- | ---
-[stock_picking_report_valued_copy_unvalued](stock_picking_report_valued_copy_unvalued/) | 16.0.1.0.0 |  | Print valued and unvalued delivery slip at the same time
+This part will be replaced when running the oca-gen-addons-table script from OCA/maintainer-tools.
 
 [//]: # (end addons)
 
