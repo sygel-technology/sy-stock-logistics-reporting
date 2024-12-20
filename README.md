@@ -16,6 +16,13 @@ Stock logistics reporting
 <!-- prettier-ignore-start -->
 
 [//]: # (addons)
+
+Available addons
+----------------
+addon | version | maintainers | summary
+--- | --- | --- | ---
+[product_label_format_restrict](product_label_format_restrict/) | 17.0.1.0.0 |  | Allows you to restrict the usage of product label formats
+
 [//]: # (end addons)
 
 <!-- prettier-ignore-end -->
