@@ -7,8 +7,28 @@
         <field name="model">res.config.settings</field>
         <field name="inherit_id" ref="base_setup.res_config_settings_view_form" />
         <field name="arch" type="xml">
-            <xpath expr="//block[@name='performance']" position="after">
-                <block
+            <xpath expr="//div[@name='performance']" position="after">
+                <h2 groups="base.group_no_one">Restricted Product Print Formats</h2>
+                <div
+                    groups="base.group_no_one"
+                    class="row mt16 o_settings_container"
+                    name="product_label_format_restrict_block"
+                >
+                    <div
+                        class="col-12 col-lg-6 o_setting_box"
+                        id="product_label_format_restrict_box"
+                    >
+                        <label for="restricted_product_label_formats" />
+                        <field
+                            name="restricted_product_label_formats"
+                            widget="many2many_tags"
+                        />
+                        <div class="text-muted">
+                            The selection of this product label formats will be restricted to every user.
+                        </div>
+                    </div>
+                </div>
+                <!-- <block
                     title="Restricted Product Print Formats"
                     name="product_label_format_restrict_block"
                 >
@@ -21,7 +41,7 @@
                             widget="many2many_tags"
                         />
                     </setting>
-                </block>
+                </block> -->
             </xpath>
         </field>
     </record>

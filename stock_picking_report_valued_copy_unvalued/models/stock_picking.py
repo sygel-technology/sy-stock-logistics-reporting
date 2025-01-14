@@ -8,7 +8,6 @@ class StockPicking(models.Model):
     _inherit = "stock.picking"
 
     unvalued_copy = fields.Boolean(
-        "Unvalued Copy",
         help="Print an unvalued picking copy",
     )
 
