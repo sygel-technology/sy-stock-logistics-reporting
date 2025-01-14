@@ -3,7 +3,7 @@
 {
     "name": "Product Label Format Restrict",
     "summary": "Allows you to restrict the usage of product label formats",
-    "version": "17.0.1.0.0",
+    "version": "16.0.1.0.0",
     "category": "Product",
     "website": "https://github.com/sygel-technology/sy-stock-logistics-reporting",
     "author": "Sygel, Odoo Community Association (OCA)",
