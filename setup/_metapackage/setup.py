@@ -8,6 +8,7 @@ setuptools.setup(
     description="Meta package for sygel-technology-sy-stock-logistics-reporting Odoo addons",
     version=version,
     install_requires=[
+        'odoo-addon-product_label_format_restrict>=16.0dev,<16.1dev',
         'odoo-addon-stock_picking_report_valued_copy_unvalued>=16.0dev,<16.1dev',
     ],
     classifiers=[
