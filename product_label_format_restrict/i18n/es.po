@@ -1,0 +1,50 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* product_label_format_restrict
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 16.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-01-14 10:11+0000\n"
+"PO-Revision-Date: 2025-01-14 10:11+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: product_label_format_restrict
+#: model:ir.model,name:product_label_format_restrict.model_product_label_layout
+msgid "Choose the sheet layout to print the labels"
+msgstr "Elija el diseño de la hoja para imprimir etiquetas"
+
+#. module: product_label_format_restrict
+#: model:ir.model,name:product_label_format_restrict.model_res_company
+msgid "Companies"
+msgstr "Compañías"
+
+#. module: product_label_format_restrict
+#: model:ir.model,name:product_label_format_restrict.model_res_config_settings
+msgid "Config Settings"
+msgstr "Ajustes de configuración"
+
+#. module: product_label_format_restrict
+#: model:ir.model.fields,field_description:product_label_format_restrict.field_res_company__restricted_product_label_formats
+#: model:ir.model.fields,field_description:product_label_format_restrict.field_res_config_settings__restricted_product_label_formats
+msgid "Restricted Product Label Formats"
+msgstr "Formatos de etiquetas de producto restringidos"
+
+#. module: product_label_format_restrict
+#: model_terms:ir.ui.view,arch_db:product_label_format_restrict.res_config_settings_view_form
+msgid "Restricted Product Print Formats"
+msgstr "Formatos de impresión de producto restringidos"
+
+#. module: product_label_format_restrict
+#: model_terms:ir.ui.view,arch_db:product_label_format_restrict.res_config_settings_view_form
+msgid ""
+"The selection of this product label formats will be restricted to every "
+"user."
+msgstr "La selección de estos formatos de etiquetas de producto estará restringida "
+"a cualquier usuario"
