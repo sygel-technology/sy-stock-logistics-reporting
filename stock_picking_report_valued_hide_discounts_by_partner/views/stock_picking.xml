@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- Copyright 2025 Valentin Vinagre <valentin.vinagre@sygel.es>
+ License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl). -->
+<odoo>
+    <record
+        id="stock_picking_report_valued_hide_discounts_by_partner"
+        model="ir.ui.view"
+    >
+        <field name="name">stock.picking.report.valued.hide.discounts.by.partner</field>
+        <field name="model">stock.picking</field>
+        <field name="inherit_id" ref="stock.view_picking_form" />
+        <field name="arch" type="xml">
+            <xpath expr="//group[@name='other_infos']" position="inside">
+                <field name="show_discounts" />
+            </xpath>
+        </field>
+    </record>
+</odoo>

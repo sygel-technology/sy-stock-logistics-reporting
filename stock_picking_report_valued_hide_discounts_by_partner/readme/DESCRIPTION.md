@@ -1,0 +1,1 @@
+This module allows you to show discount or unit price with discount included in pickings.

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- Copyright 2025 Valentin Vinagre <valentin.vinagre@sygel.es>
+     License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl). -->
+<odoo>
+    <template
+        id="valued_report_picking_hide_discounts_by_partner"
+        inherit_id="stock_picking_report_valued.valued_report_picking"
+        priority="999"
+    >
+        <!-- discounts -->
+        <xpath expr="//th[@name='th_sml_discount']" position="attributes">
+            <attribute name="t-if">o.show_discounts</attribute>
+        </xpath>
+    </template>
+
+    <template
+        id="valued_report_picking_has_serial_move_line_hide_discounts_by_partner"
+        inherit_id="stock_picking_report_valued.valued_report_picking_has_serial_move_line"
+        priority="999"
+    >
+        <!-- discounts -->
+        <xpath expr="//td[@name='td_sml_discount']" position="attributes">
+            <attribute name="t-if">o.show_discounts</attribute>
+        </xpath>
+
+        <!-- unit price-->
+        <xpath
+            expr="//td[@name='td_sml_unit_price']//span[@t-field='move_line.sale_price_unit']"
+            position="attributes"
+        >
+            <attribute name="t-if">o.show_discounts</attribute>
+        </xpath>
+        <xpath
+            expr="//td[@name='td_sml_unit_price']//span[@t-field='move_line.sale_price_unit']"
+            position="after"
+        >
+            <span t-else="" t-field="move_line.sale_price_unit_with_discount" />
+        </xpath>
+    </template>
+
+</odoo>
