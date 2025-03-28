@@ -1,0 +1,38 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* delivery_slip_packages
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 17.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-03-31 14:34+0000\n"
+"PO-Revision-Date: 2025-03-31 16:34+0200\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: es\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 3.4.4\n"
+
+#. module: delivery_slip_packages
+#: model_terms:ir.ui.view,arch_db:delivery_slip_packages.report_delivery_slip_with_packages_report_delivery_document
+msgid "<strong>Packages:</strong>"
+msgstr "<strong>Paquetes:</strong>"
+
+#. module: delivery_slip_packages
+#: model_terms:ir.ui.view,arch_db:delivery_slip_packages.delivery_slip_packages_view_picking_type_form
+msgid "Delivery Report Settings"
+msgstr "Configuración del albarán de entrega"
+
+#. module: delivery_slip_packages
+#: model:ir.model,name:delivery_slip_packages.model_stock_picking_type
+msgid "Picking Type"
+msgstr "Tipo de albarán"
+
+#. module: delivery_slip_packages
+#: model:ir.model.fields,field_description:delivery_slip_packages.field_stock_picking_type__show_packages_delivery_slip
+msgid "Show Packages in Delivery Report"
+msgstr "Mostrar paquetes en el informe del albarán de entrega"
