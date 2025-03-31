@@ -21,6 +21,7 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
+[delivery_slip_packages](delivery_slip_packages/) | 17.0.1.0.0 |  | Show package numbers in Delivery Slips and Invoices
 [product_label_format_restrict](product_label_format_restrict/) | 17.0.1.0.0 |  | Allows you to restrict the usage of product label formats
 
 [//]: # (end addons)
