@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <template
+        id="report_delivery_slip_with_packages_report_delivery_document"
+        inherit_id="stock.report_delivery_document"
+    >
+        <xpath expr="//div[@t-if='o.shipping_weight']" position="after">
+            <div
+                name="o.number_of_packages"
+                t-if="o.picking_type_id.show_packages_delivery_slip"
+                class="col-auto col-3 mw-100 mb-2"
+            >
+                <strong>Packages:</strong>
+                <p t-field="o.number_of_packages" class="m-0" />
+            </div>
+        </xpath>
+    </template>
+</odoo>

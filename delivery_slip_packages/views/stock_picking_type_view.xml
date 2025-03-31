@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <record model="ir.ui.view" id="delivery_slip_packages_view_picking_type_form">
+        <field name="name">delivery.slip.packages.view.picking.type.form</field>
+        <field name="model">stock.picking.type</field>
+        <field name="inherit_id" ref="stock.view_picking_type_form" />
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='default_location_src_id']/.." position="after">
+                <group string="Delivery Report Settings">
+                    <field name="show_packages_delivery_slip" />
+                </group>
+            </xpath>
+        </field>
+    </record>
+</odoo>
