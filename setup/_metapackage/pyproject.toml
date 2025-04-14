@@ -1,8 +1,9 @@
 [project]
 name = "odoo-addons-sygel-technology-sy-stock-logistics-reporting"
-version = "17.0.20250331.0"
+version = "17.0.20250414.0"
 dependencies = [
     "odoo-addon-delivery_slip_packages>=17.0dev,<17.1dev",
+    "odoo-addon-picking_report_show_chained>=17.0dev,<17.1dev",
     "odoo-addon-product_label_format_restrict>=17.0dev,<17.1dev",
 ]
 classifiers=[
