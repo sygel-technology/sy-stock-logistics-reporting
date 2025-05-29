@@ -22,6 +22,7 @@ Available addons
 addon | version | maintainers | summary
 --- | --- | --- | ---
 [delivery_slip_packages](delivery_slip_packages/) | 17.0.1.0.0 |  | Show package numbers in Delivery Slips and Invoices
+[picking_report_shipping_ref](picking_report_shipping_ref/) | 17.0.1.0.0 |  | Adds a shipping reference label to delivery orders.
 [picking_report_show_chained](picking_report_show_chained/) | 17.0.1.0.0 |  | Display previous and subsequent pickings in pickings PDFs
 [product_label_format_restrict](product_label_format_restrict/) | 17.0.1.0.0 |  | Allows you to restrict the usage of product label formats
 
