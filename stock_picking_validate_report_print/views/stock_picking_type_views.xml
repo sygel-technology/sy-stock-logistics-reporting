@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- Copyright 2025 Manuel Regidor <manuel.regidor@sygel.es>
+     License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl). -->
+<odoo>
+    <record model="ir.ui.view" id="stock_picking_validate_report_print_view_warehouse">
+        <field name="name">stock.picking.validate.report.print.view.warehouse</field>
+        <field name="model">stock.picking.type</field>
+        <field name="inherit_id" ref="stock.view_picking_type_form" />
+        <field name="arch" type="xml">
+            <notebook position="inside">
+                <page
+                    name="delivery_slip_print"
+                    string="Report Print at Validate"
+                    groups="base_report_to_printer.printing_group_manager"
+                >
+                    <group>
+                        <field name="print_at_validate" />
+                    </group>
+                    <group
+                        string="General Configuration"
+                        invisible="not print_at_validate"
+                    >
+                        <field
+                            name="validate_print_report_ids"
+                            options="{'no_create': True}"
+                            widget="many2many_tags"
+                        />
+                        <field
+                            name="validate_print_report_printer_id"
+                            options="{'no_create': True}"
+                        />
+                        <field
+                            name="validate_print_report_user_ids"
+                            options="{'no_create': True}"
+                            widget="many2many_tags"
+                        />
+                        <field name="validate_print_report_copies" />
+                    </group>
+                    <group
+                        string="User Configuration"
+                        invisible="not print_at_validate"
+                    >
+                        <field
+                            name="stock_picking_validate_print_report_ids"
+                            nolabel="1"
+                            colspan="2"
+                        >
+                            <tree editable="bottom">
+                                <field name="user_id" options="{'no_create': True}" />
+                                <field name="report_id" options="{'no_create': True}" />
+                                <field
+                                    name="printer_id"
+                                    options="{'no_create': True}"
+                                />
+                                <field name="copies" />
+                            </tree>
+                        </field>
+                    </group>
+                </page>
+            </notebook>
+        </field>
+    </record>
+</odoo>
