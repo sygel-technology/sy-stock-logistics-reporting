@@ -10,6 +10,7 @@ setuptools.setup(
     install_requires=[
         'odoo-addon-product_label_format_restrict>=16.0dev,<16.1dev',
         'odoo-addon-stock_picking_report_valued_copy_unvalued>=16.0dev,<16.1dev',
+        'odoo-addon-stock_picking_report_valued_hide_discounts_by_partner>=16.0dev,<16.1dev',
     ],
     classifiers=[
         'Programming Language :: Python',

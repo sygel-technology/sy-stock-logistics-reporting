@@ -23,6 +23,7 @@ addon | version | maintainers | summary
 --- | --- | --- | ---
 [product_label_format_restrict](product_label_format_restrict/) | 16.0.1.0.0 |  | Allows you to restrict the usage of product label formats
 [stock_picking_report_valued_copy_unvalued](stock_picking_report_valued_copy_unvalued/) | 16.0.1.0.0 |  | Print valued and unvalued delivery slip at the same time
+[stock_picking_report_valued_hide_discounts_by_partner](stock_picking_report_valued_hide_discounts_by_partner/) | 16.0.1.0.0 |  | Stock Picking Report Valued Hide Discounts by Partner
 
 [//]: # (end addons)
 
