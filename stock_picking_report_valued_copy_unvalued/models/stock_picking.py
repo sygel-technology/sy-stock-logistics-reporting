@@ -5,16 +5,19 @@ from odoo import fields, models
 
 
 class StockPicking(models.Model):
-    _inherit = 'stock.picking'
+    _inherit = "stock.picking"
 
     unvalued_copy = fields.Boolean(
-        'Unvalued Copy',
-        help='Print an unvalued picking copy',
+        "Unvalued Copy",
+        help="Print an unvalued picking copy",
     )
 
     def create(self, values):
-        values.update({
-            'unvalued_copy': self.env['res.partner'].browse(
-                values['partner_id']).unvalued_picking_copy
-        })
+        values.update(
+            {
+                "unvalued_copy": self.env["res.partner"]
+                .browse(values["partner_id"])
+                .unvalued_picking_copy
+            }
+        )
         return super().create(values)
