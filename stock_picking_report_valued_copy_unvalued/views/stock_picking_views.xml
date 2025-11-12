@@ -10,10 +10,7 @@
         <field name="arch" type="xml">
             <xpath expr="//group[@name='other_infos']" position="inside">
                 <field name="valued" invisible="1" />
-                <field
-                    name="unvalued_copy"
-                    attrs="{'invisible':[('valued','=',False)]}"
-                />
+                <field name="unvalued_copy" invisible="not valued" />
             </xpath>
         </field>
     </record>

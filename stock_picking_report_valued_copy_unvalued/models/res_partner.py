@@ -8,7 +8,6 @@ class ResPartner(models.Model):
     _inherit = "res.partner"
 
     unvalued_picking_copy = fields.Boolean(
-        string="Unvalued Picking Copy",
         default=False,
         help="Print an unvalued picking copy",
         copy=False,

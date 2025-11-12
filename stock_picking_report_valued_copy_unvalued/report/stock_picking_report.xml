@@ -17,7 +17,9 @@
         inherit_id="stock.report_deliveryslip"
     >
         <xpath expr="//t" position="inside">
-            <t t-if="o.valued and o.unvalued_copy">
+            <t
+                t-if="o.valued and o.unvalued_copy and o.picking_type_code == 'outgoing'"
+            >
               <t t-call="stock.report_delivery_document" t-lang="o._get_report_lang()">
                 <t t-set="skip_valued_report" t-value="True" />
               </t>
