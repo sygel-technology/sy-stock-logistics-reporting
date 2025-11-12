@@ -9,10 +9,7 @@
         <field name="inherit_id" ref="base.view_partner_form" />
         <field name="arch" type="xml">
             <field name="valued_picking" position="after">
-                <field
-                    name="unvalued_picking_copy"
-                    attrs="{'invisible':[('valued_picking','=',False)]}"
-                />
+                <field name="unvalued_picking_copy" invisible="not valued_picking" />
             </field>
         </field>
     </record>

@@ -3,7 +3,7 @@
 {
     "name": "Stock Picking Report with Unvalued Copy",
     "summary": "Print valued and unvalued delivery slip at the same time",
-    "version": "16.0.1.0.0",
+    "version": "17.0.1.0.0",
     "category": "Stock",
     "website": "https://github.com/sygel-technology/sy-stock-logistics-reporting",
     "author": "Alberto Martínez, Odoo Community Association (OCA)",
