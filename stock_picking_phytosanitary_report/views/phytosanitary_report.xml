@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- Copyright 2026 Alberto Martínez <alberto.martinez@sygel.es>
+     License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl). -->
+<odoo>
+    <template id="report_phytosanitary">
+        <t t-set="o" t-value="o.with_context(lang=o.partner_id.lang)" />
+        <div class="header" style="margin: 5mm 0mm;">
+            <br />
+            <div style="float: right; font-size: 10px">
+                <span class="page" /> / <span class="topage" />
+            </div>
+            <img
+                style="width: 15%"
+                src='/stock_picking_phytosanitary_report/static/src/img/logo-ue.png'
+            />
+            <span
+                style="font-weight: bold; font-size: 18px"
+            >PASSAPORT FITOSANITARI / PLANT PASSPORT</span>
+            <br />
+            <br />
+        </div>
+        <div class="page" style="margin: 0mm 10mm;">
+            <div
+                class="row"
+                t-if="o.move_ids.filtered(lambda x: x.product_id.botanic_denomination_id)"
+            >
+                <div class="col-xs-5">
+                    <strong>A</strong>
+                    <ul style="list-style-type:none;">
+                        <t t-foreach="o.move_ids" t-as="line">
+                            <li t-if="line.product_id.botanic_denomination_id">
+                                <span
+                                    t-out="line.product_id.botanic_denomination_id.name"
+                                />
+                            </li>
+                        </t>
+                    </ul>
+                </div>
+                <div class="col-xs-3">
+                    <strong>B</strong>
+                    <span t-out="o.company_id.phytosanitary_reference" />
+                </div>
+                <div class="col-xs-3">
+                    <strong>C</strong>
+                    <span t-out="o.name" />
+                </div>
+                <div class="col-xs-1">
+                    <strong>D</strong>
+                    <span>ES</span>
+                </div>
+            </div>
+        </div>
+    </template>
+
+    <template id="report_phytosanitary_report">
+        <t t-call="web.html_container">
+            <t t-foreach="docs" t-as="o">
+                <t
+                    t-call="stock_picking_phytosanitary_report.report_phytosanitary"
+                    t-lang="o.partner_id.lang"
+                />
+            </t>
+        </t>
+    </template>
+
+    <record id="stock_phytosanitary_report" model="ir.actions.report">
+        <field name="name">Phytosanitary Report</field>
+        <field name="model">stock.picking</field>
+        <field name="report_type">qweb-pdf</field>
+        <field
+            name="report_name"
+        >stock_picking_phytosanitary_report.report_phytosanitary_report</field>
+        <field
+            name="report_file"
+        >stock_picking_phytosanitary_report.report_phytosanitary_report</field>
+        <field
+            name="print_report_name"
+        >'Phytosanitary Report - %s - %s' % (object.partner_id.name or '', object.name)</field>
+        <field name="paperformat_id" ref="base.paperformat_euro" />
+        <field name="binding_model_id" ref="stock.model_stock_picking" />
+        <field name="binding_type">report</field>
+    </record>
+</odoo>

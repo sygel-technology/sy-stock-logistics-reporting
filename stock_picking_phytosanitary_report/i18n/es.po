@@ -1,0 +1,85 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* stock_picking_phytosanitary_report
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 18.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-03-10 15:16+0000\n"
+"PO-Revision-Date: 2026-03-10 15:16+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: stock_picking_phytosanitary_report
+#: model:ir.actions.report,print_report_name:stock_picking_phytosanitary_report.stock_phytosanitary_report
+msgid ""
+"'Phytosanitary Report - %s - %s' % (object.partner_id.name or '', "
+"object.name)"
+msgstr ""
+"'Pasaporte fitosanitario - %s - %s' % (object.partner_id.name or '', "
+"object.name)"
+
+#. module: stock_picking_phytosanitary_report
+#: model_terms:ir.ui.view,arch_db:stock_picking_phytosanitary_report.report_phytosanitary
+msgid "<span class=\"page\"/> / <span class=\"topage\"/>"
+msgstr "<span class=\"page\"/> / <span class=\"topage\"/>"
+
+#. module: stock_picking_phytosanitary_report
+#: model_terms:ir.ui.view,arch_db:stock_picking_phytosanitary_report.report_phytosanitary
+msgid ""
+"<span style=\"font-weight: bold; font-size: 18px\">PASSAPORT FITOSANITARI / PLANT PASSPORT</span>\n"
+"            <br/>\n"
+"            <br/>"
+msgstr ""
+"<span style=\"font-weight: bold; font-size: 18px\">PASAPORTE FITOSANITARI / PLANT PASSPORT</span>\n"
+"            <br/>\n"
+"            <br/>"
+
+#. module: stock_picking_phytosanitary_report
+#: model_terms:ir.ui.view,arch_db:stock_picking_phytosanitary_report.report_phytosanitary
+msgid "<strong>A</strong>"
+msgstr "<strong>A</strong>"
+
+#. module: stock_picking_phytosanitary_report
+#: model_terms:ir.ui.view,arch_db:stock_picking_phytosanitary_report.report_phytosanitary
+msgid "<strong>B</strong>"
+msgstr "<strong>B</strong>"
+
+#. module: stock_picking_phytosanitary_report
+#: model_terms:ir.ui.view,arch_db:stock_picking_phytosanitary_report.report_phytosanitary
+msgid "<strong>C</strong>"
+msgstr "<strong>C</strong>"
+
+#. module: stock_picking_phytosanitary_report
+#: model_terms:ir.ui.view,arch_db:stock_picking_phytosanitary_report.report_phytosanitary
+msgid ""
+"<strong>D</strong>\n"
+"                    <span>ES</span>"
+msgstr ""
+"<strong>D</strong>\n"
+"                    <span>ES</span>"
+
+#. module: stock_picking_phytosanitary_report
+#: model:ir.ui.menu,name:stock_picking_phytosanitary_report.menu_botanic_denomination
+msgid "Botanic Denominations"
+msgstr "Denominaciones Botánicas"
+
+#. module: stock_picking_phytosanitary_report
+#: model:ir.model,name:stock_picking_phytosanitary_report.model_res_company
+msgid "Companies"
+msgstr "Compañías"
+
+#. module: stock_picking_phytosanitary_report
+#: model:ir.model.fields,field_description:stock_picking_phytosanitary_report.field_res_company__phytosanitary_reference
+msgid "Phytosanitary Reference"
+msgstr "Referencia fitosanitaria"
+
+#. module: stock_picking_phytosanitary_report
+#: model:ir.actions.report,name:stock_picking_phytosanitary_report.stock_phytosanitary_report
+msgid "Phytosanitary Report"
+msgstr "Pasaporte fitosanitario"
