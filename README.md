@@ -16,6 +16,13 @@ Stock logistics reporting
 <!-- prettier-ignore-start -->
 
 [//]: # (addons)
+
+Available addons
+----------------
+addon | version | maintainers | summary
+--- | --- | --- | ---
+[stock_picking_phytosanitary_report](stock_picking_phytosanitary_report/) | 18.0.1.0.0 |  | Adds a phytosanitary report (plant passport) to stock picking
+
 [//]: # (end addons)
 
 <!-- prettier-ignore-end -->
