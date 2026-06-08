@@ -6,7 +6,7 @@
     "version": "17.0.1.0.0",
     "category": "Stock",
     "website": "https://github.com/sygel-technology/sy-stock-logistics-reporting",
-    "author": "Alberto Martínez, Odoo Community Association (OCA)",
+    "author": "Sygel",
     "license": "AGPL-3",
     "application": False,
     "installable": True,

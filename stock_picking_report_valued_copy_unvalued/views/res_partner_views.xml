@@ -2,7 +2,6 @@
 <!-- Copyright 2023 Alberto Martínez <alberto.martinez@sygel.es>
      License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl). -->
 <odoo>
-
     <record model="ir.ui.view" id="view_partner_form_valued_picking_copy_unvalued">
         <field name="name">res.partner.form.valued.picking.copy.unvalued</field>
         <field name="model">res.partner</field>
@@ -13,5 +12,4 @@
             </field>
         </field>
     </record>
-
 </odoo>
