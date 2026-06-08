@@ -35,22 +35,21 @@ Configuration
 
 To configure this module, you need to:
 
-1. Go to Contact Form / Sales and Purchases. Configure the valued
-   picking, and unvalued picking copy checks.
+1. Go to a Contact's Form view, and then to its "Sales & Purchase" tab.
+   Configure the valued picking, and unvalued picking copy checks.
 
 Usage
 =====
 
 To use this module, you need to:
 
-1. Go to Contact Form / Sales and Purchases. Configure the valued
-   picking, and unvalued picking copy checks.
+1. Create a delivery stock picking from a sale with a contact that has
+   the "unvalued picking copy" check.
 
-2. Create a delivery stock picking.
+2. Print the delivery slip report. You will see 2 reports, the valued
+   and the unvalued
 
-3. Print the delivery slip report.
-
-4. In the "Additional info" section of the picking, you can edit the
+3. In the "Additional info" section of the picking, you can edit the
    "unvalued picking copy" option without affecting its partner's
    default configuration option.
 
