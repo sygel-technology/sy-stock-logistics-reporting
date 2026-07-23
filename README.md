@@ -22,6 +22,7 @@ Available addons
 addon | version | maintainers | summary
 --- | --- | --- | ---
 [stock_picking_phytosanitary_report](stock_picking_phytosanitary_report/) | 18.0.1.0.0 |  | Adds a phytosanitary report (plant passport) to stock picking
+[stock_picking_report_valued_copy_unvalued](stock_picking_report_valued_copy_unvalued/) | 18.0.1.0.0 |  | Print valued and unvalued delivery slip at the same time
 
 [//]: # (end addons)
 

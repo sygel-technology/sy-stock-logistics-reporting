@@ -1,8 +1,9 @@
 [project]
 name = "odoo-addons-sygel-technology-sy-stock-logistics-reporting"
-version = "18.0.20260320.0"
+version = "18.0.20260723.0"
 dependencies = [
     "odoo-addon-stock_picking_phytosanitary_report==18.0.*",
+    "odoo-addon-stock_picking_report_valued_copy_unvalued==18.0.*",
 ]
 classifiers=[
     "Programming Language :: Python",
